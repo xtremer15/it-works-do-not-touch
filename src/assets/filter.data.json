@@ -1,0 +1,22 @@
+[{
+        "id": "priceHigh",
+        "label": "Highest to lowest",
+        "isChecked": true
+    },
+    {
+        "id": "priceLow",
+        "label": "Lowest to highest",
+        "isChecked": false
+    },
+    {
+        "id": "title",
+        "label": "Product name",
+        "isChecked": false
+    },
+    {
+        "id": "inStock",
+        "label": "In Stock",
+        "isChecked": false,
+        "inStock": false
+    }
+]

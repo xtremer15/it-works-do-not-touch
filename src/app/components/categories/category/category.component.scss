@@ -1,0 +1,19 @@
+mat-card{
+    display: inline-flex;
+    flex-direction: column;
+    width: 180px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 10px;
+    overflow: auto;
+    background-color: antiquewhite;
+    mat-card-content{
+        word-break: break-all;
+        
+    }
+}
+
+#loading-spinner{
+    display: block;
+    margin:auto;
+}

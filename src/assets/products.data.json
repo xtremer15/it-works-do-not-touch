@@ -1,0 +1,74 @@
+[
+    [
+        {
+            "productName": "Jaguar",
+            "model": "XF1"
+        },
+        {
+            "productName": "Chrysler",
+            "model": "300c"
+        },
+        {
+            "productName": "BMW",
+            "model": "Seria 1"
+        },
+        {
+            "productName": "Volkswagen",
+            "model": "Tiguan"
+        },
+        {
+            "productName": "Scoda",
+            "model": "Fabia"
+        }
+    ],
+    [
+        {
+            "productName": "Mount&Blade BannerLord",
+            "genere": "RTS"
+        },
+        {
+            "productName": "Starcraft",
+            "genere": "Strategy/RTS"
+        },
+        {
+            "productName": "Warcraft",
+            "genere": "Strategy/RTS"
+        },
+        {
+            "productName": "Witcher",
+            "genere": "RPG"
+        },
+        {
+            "productName": "Street Figher 4",
+            "genere": "Fighting"
+        }
+    ],
+    [
+        {
+            "productName": "God is Dead",
+            "author": "Friedrich Nietzsche"
+        },
+        {
+            "productName": "Beyond Good and Evil",
+            "author": "Friedrich Nietzsche"
+        },
+        {
+            "productName": "Aventurile lui Tom Sawyer",
+            "author": "Mark Twain"
+        }
+    ],
+    [
+        {
+            "productName": "Razer",
+            "year": "911"
+        },
+        {
+            "productName": "MacBook",
+            "year": "1302"
+        },
+        {
+            "productName": "Legion",
+            "year": "4032"
+        }
+    ]
+]

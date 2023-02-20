@@ -1,0 +1,16 @@
+<!-- <pre>{{products$ | async}}</pre>
+<hr> -->
+<!-- <div *ngFor="let item of products$">
+    <div>{{item | json}}</div>
+</div> -->
+<section *ngIf="products$;else loading">
+  <mat-card *ngFor="let product of products$">
+    <mat-card-title>{{product?.productName}}</mat-card-title>
+    <mat-card-content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, id.</mat-card-content>
+  </mat-card>
+</section>
+
+
+<ng-template #loading>
+  <mat-spinner id="loading-spinner"></mat-spinner>
+</ng-template>

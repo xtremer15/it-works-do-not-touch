@@ -1,0 +1,16 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    background-color: #221d1d;
+    color: #00ced1;
+    & .logo img {
+        vertical-align: middle;
+        width: 100px;
+        height: auto;
+    }
+    & #share {
+        color: rgb(102, 200, 230);
+    }
+}

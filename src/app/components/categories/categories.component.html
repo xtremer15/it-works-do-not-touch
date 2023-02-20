@@ -1,0 +1,19 @@
+<!-- <ng-template>
+    //TODO: de facut debugging de ce se afiseaza tempalte-ul din child daca nu adaug ng-template
+    <app-category [categoryIndex]="catIndex"></app-category>
+</ng-template> -->
+
+<div *ngIf="categories;else loading">
+    <mat-card class="categories" *ngFor="let category of categories ; index as categoryIndex" (click)="nagivateToCategory(category?.id)">
+        <mat-card-header>{{category?.id}}</mat-card-header>
+        <mat-card-title>{{category?.categoryName}}</mat-card-title>
+        <mat-card-content>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, maxime quia animi sed voluptatem reprehenderit distinctio quos dolorem laborum blanditiis assumenda eaque vero dicta atque tempora eligendi fuga exercitationem! Repellat. Exercitationem
+            dolorum provident voluptatibus soluta atque perspiciatis quis alias id maxime nihil nesciunt recusandae in, repellat laudantium nobis temporibus architecto harum, sint obcaecati ad fuga vero praesentium. Excepturi, beatae repudiandae?
+        </mat-card-content>
+
+    </mat-card>
+</div>
+
+<ng-template #loading>
+    <mat-spinner id="loading-spinner"></mat-spinner>
+</ng-template>

@@ -1,0 +1,27 @@
+<app-header (isOpen)="toggleSideBar($event)"></app-header>
+
+<mat-sidenav-container>
+    <mat-sidenav #side mode="side" [(opened)]="sideNavStatus">
+        <mat-form-field>
+            <mat-label>Search Category</mat-label>
+            <input matInput type="text" name="search">
+        </mat-form-field>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Filter Options
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <section>
+                    <mat-checkbox [class]="prop?.label" [checked]="prop?.isChecked" (change)="filterCategory(prop?.label,$event?.checked)" *ngFor="let prop of filterList">{{prop?.label}}</mat-checkbox>
+                </section>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<app-footer></app-footer>

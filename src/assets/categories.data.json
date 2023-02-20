@@ -1,0 +1,18 @@
+[
+    {
+        "id": 4,
+        "categoryName": "Cars"
+    },
+    {
+        "id": 2,
+        "categoryName": "Games"
+    },
+    {
+        "id": 1,
+        "categoryName": "Books"
+    },
+    {
+        "id": 3,
+        "categoryName": "Laptops"
+    }
+]
