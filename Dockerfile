@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the application dependencies
-RUN npm install && npm audit fix
+RUN npm install && npm audit fix --force
 
 RUN npm run build --prod
 
