@@ -1,5 +1,11 @@
 {
-    "target": "https://xtremer15.github.io",
-    "secure": false,
-    "logLevel": "info"
+    "github/*": {
+        "target": "https://xtremer15.github.io",
+        "secure": true,
+        "logLevel": "info",
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/it-works-do-not-touch/": "https://xtremer15.github.io/it-works-do-not-touch/"
+        }
+    }
 }
