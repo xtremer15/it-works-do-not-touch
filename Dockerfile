@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:16
+FROM node:14
 
 # Set the working directory in the container
 WORKDIR /app
@@ -9,6 +9,7 @@ COPY . /app
 
 # Install the application dependencies
 RUN npm install
+RUN npm audit fix
 
 # Define the entry point for the container
 CMD ["npm", "start"]
