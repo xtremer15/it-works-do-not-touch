@@ -1,8 +1,9 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoriesService } from './components/categories/services/categories.service';
 import { Filter } from './interfaces/fiter';
+import { MatSelect } from '@angular/material/select';
 
 @Component({
   selector: 'app-root',
@@ -12,9 +13,8 @@ import { Filter } from './interfaces/fiter';
   // encapsulation:ViewEncapsulation.None
 })
 export class AppComponent implements OnInit, AfterViewInit {
-
-
-  constructor(private categorieSvc: CategoriesService, private router: Router,private route:ActivatedRoute) { }
+  panelOpenState = false;
+  constructor(private categorieSvc: CategoriesService, private router: Router, private route: ActivatedRoute) { }
 
   filterList: Partial<Filter[]> | undefined
   sideNavStatus: boolean | undefined;

@@ -18,3 +18,10 @@ mat-sidenav-container {
         padding-left: 10px;
     }
 }
+.mat-option:not(.mat-option-disabled), .mat-option:focus:not(.mat-option-disabled){
+    height: 150px;
+}
+
+ul{
+    list-style: none;
+}
